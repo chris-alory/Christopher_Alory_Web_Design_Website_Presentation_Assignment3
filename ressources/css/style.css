@@ -2,25 +2,28 @@
 
 /* -------------------- GLOBAL DEFAULTS */
 
-*
-{
+* {
     box-sizing: border-box;
 }
 
-body
-{
-background-color:yellow;
+body {
+    background-color: yellow;
 }
 
 /* -------------------- HEADINGS AND TYPE */
 
-h1
-{
+h1 {
     background-color: bisque;
-    color:blue;
+    color: blue;
 }
 
 /* -------------------- LAYOUTS */
+
+.layout-wide {
+    background-color: red;
+    max-width: 1000px;
+    margin: auto;
+}
 
 /* -------------------- HEADER */
 
