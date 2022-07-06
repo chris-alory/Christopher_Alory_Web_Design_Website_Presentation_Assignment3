@@ -28,6 +28,7 @@ h1 {
     background-color: #fff;
     max-width: 1000px;
     margin: auto;
+    padding:3%;
 }
 
 /* -------------------- HEADER */
@@ -37,3 +38,8 @@ h1 {
 /* -------------------- FOOTER */
 
 /* -------------------- MODULES */
+
+.content-item-2col{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
