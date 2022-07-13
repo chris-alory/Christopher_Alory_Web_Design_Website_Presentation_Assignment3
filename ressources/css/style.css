@@ -9,11 +9,26 @@
 
 body {
     background-color: #f1f1f1;
+    font-size:16px;
+    line-height: 1.4;
 }
 
 img,
 iframe {
     max-width: 100%;
+}
+
+a{
+    color:red;
+    text-decoration: none;
+}
+a:hover{
+    color:darkred;
+}
+
+a:visited
+{
+    color:rgb(63, 8, 8);
 }
 
 /* -------------------- HEADINGS AND TYPE */
