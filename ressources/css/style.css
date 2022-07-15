@@ -15,6 +15,7 @@ body {
 }
 
 img,
+video,
 iframe {
     max-width: 100%;
 }
@@ -116,10 +117,18 @@ header {
 
 .content-item-4col {
     grid-template-columns: 1fr 1fr;
+
+}
+
+.content-item-4col div{
+    padding: 1%;
 }
 
 @media screen and (min-width:800px) {
 
+    .content-item-2col div,.content-item-3col div,.content-item-4col div{
+        padding: 1%;
+    }
     .content-item-2col {
         grid-template-columns: 1fr 1fr;
     }

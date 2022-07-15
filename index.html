@@ -13,8 +13,9 @@
     <header>
         <!-- This is the header section-->
         <section class="layout layout-header">
-            <a href="index.html"><img src="ressources/images/logo.jpg" alt="Logo" class="logo"/></a>
-            <a href="#display-menu" class="menu-mobile" ><img src="ressources/images/mobile-menu.svg" alt="Menu" class="icon-menu-mobile"/></a>
+            <a href="index.html"><img src="ressources/images/logo.jpg" alt="Logo" class="logo" /></a>
+            <a href="#display-menu" class="menu-mobile"><img src="ressources/images/mobile-menu.svg" alt="Menu"
+                    class="icon-menu-mobile" /></a>
         </section>
     </header>
     <nav>
@@ -24,8 +25,21 @@
     </nav>
     <main>
         <section class="layout layout-wide">
-            <h1>My name is Chris</h1>
-            <p>How cool is code?</p>
+            <section class="content-item-2col">
+                <div>
+                    <h2>I'm Christopher</h2>
+                    <p>My name is Christopher and I like coding.</p>
+                </div>
+                <div>
+                    <img src="ressources/images/coding.jpg" alt="Code lines" />
+                </div>
+            </section>
+<h2>I really like coding!</h2>
+<section class="content-item-3col">
+    <div><img src="ressources/images/coding.jpg" alt="Code lines" /></div>
+    <div><img src="ressources/images/coding.jpg" alt="Code lines" /></div>
+    <div><img src="ressources/images/coding.jpg" alt="Code lines" /></div>
+</section>
             <!-- This is where the main body text goes -->
             <h1>Custom elements</h1>
 
@@ -221,23 +235,11 @@
 
             <p>We'll add some native videos files here at some stage</p>
 
-            <section class="content-item-2col">
-                <div>
-                    <img src="https://placekitten.com/2000/600" alt="Image alt text" />
-                </div>
-                <div>
-                    <h2>Title img</h2>
-                    <p>blablabla </p>
-                </div>
-            </section>
-
             <h3>Video (no controls - for background)</h3>
-
-
+            <video src="ressources/videos/tram-video.mp4" loop autoplay muted></video>
 
             <h3>Video with controls</h3>
-
-
+            <video src="ressources/videos/tram-video.mp4" controls></video>
 
             <h2>Some headings in semantic context</h2>
 
@@ -275,7 +277,9 @@
         </section>
     </main>
     <footer>
+        <section class="layout layout-footer">
         <p>This is the footer</p>
+    </section>
     </footer>
 </body>
 
