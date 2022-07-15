@@ -49,17 +49,15 @@ h5 {
 
 /* -------------------- LAYOUTS */
 
-.layout
-{
-background-color: #fff;
-padding: 1%;
+.layout {
+    background-color: #fff;
+    padding: 1%;
 }
-.layout-header
-{
-display: block;
-height:100px;
-padding-left:2%;
-padding-right:2%;
+
+.layout-header {
+    display: block;
+    height: 50px;
+    padding: 0% 2%;
 }
 
 .layout-wide {
@@ -67,32 +65,42 @@ padding-right:2%;
     margin: 1%;
 }
 
+@media screen and (min-width:600px) {
+    .layout-header {
+        height: 80px;
+    }
+}
+
 @media screen and (min-width:800px) {
     .layout-wide {
         margin: auto;
     }
 
-    .layout-header
-{
-display: none;
-}
+    .layout-header {
+        display: none;
+    }
 }
 
 /* -------------------- HEADER */
 
-.logo {
-    width:80px;
-    
+.logo,
+.menu-mobile img {
+    width: 40px;
+    margin: 5px 0px;
 }
 
-.menu-mobile
-{
-    position:absolute;
+.menu-mobile {
+    position: absolute;
     right: 2%;
 }
-.menu-mobile img
-{
-width:80px;
+
+@media screen and (min-width:600px) {
+
+    .logo,
+    .menu-mobile img {
+        width: 60px;
+        margin: 10px 0px;
+    }
 }
 
 /* -------------------- NAVIGATION */
