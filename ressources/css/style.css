@@ -106,9 +106,24 @@ details p {
     background-color: #1aa7f3;
 }
 
+.email:hover {
+    background-color: #1596dc;
+}
+
 .phone,
 .sms {
     background-color: #00f700;
+}
+
+.phone:hover,
+.sms:hover {
+    background-color: #05d105;
+}
+
+.email:hover,
+.phone:hover,
+.sms:hover {
+    color: white;
 }
 
 .icon {
@@ -122,7 +137,6 @@ details p {
     background: url(../images/email.svg);
     background-size: 100%;
 }
-
 
 .phone-icon {
     background: url(../images/phone.svg);
@@ -148,22 +162,6 @@ details p {
     .btn:visited {
         justify-content: center;
         display: inline-flex;
-    }
-
-    .btn-default:hover {
-        color: white;
-        background-color: #999999;
-    }
-
-    .email:hover {
-        color: white;
-        background-color: #1596dc;
-    }
-
-    .phone:hover,
-    .sms:hover {
-        color: white;
-        background-color: #05d105;
     }
 }
 
