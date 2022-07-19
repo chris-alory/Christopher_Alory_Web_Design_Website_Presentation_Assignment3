@@ -18,20 +18,107 @@ img,
 video,
 iframe {
     max-width: 100%;
+    border-radius: 10px;
 }
 
 a {
-    color: red;
+    color: #C12C2C;
     text-decoration: none;
+    font-weight: 500;
 }
 
 a:hover {
-    color: darkred;
+    color: #4D4D4D;
 }
 
 a:visited {
-    color: rgb(63, 8, 8);
+    color: #891f31;
 }
+
+blockquote {
+    background-color: #999999;
+    border-radius: 10px;
+    padding: 15px;
+    display: inline-block;
+}
+
+blockquote p {
+    margin: 0px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+blockquote p::before {
+    content: open-quote;
+    font-size: 30px;
+}
+
+blockquote p::after {
+    content: close-quote;
+    font-size: 30px;
+}
+
+blockquote cite {
+    font-style: italic;
+    font-weight: 300;
+}
+
+summary {
+    background-color: #4D4D4D;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    min-width: 150px;
+    margin: 4px;
+    cursor: pointer;
+}
+
+details p {
+    margin: 0px 10px;
+}
+
+.btn,
+.btn:visited {
+    background-color: #4D4D4D;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    min-width: 150px;
+    text-align: center;
+    display: block;
+    margin: 4px;
+}
+
+.btn:hover {
+    color: white;
+    background-color: #999999;
+
+}
+
+.border {
+    border: 2px #999999 solid;
+}
+
+/* -- Desktop size only*/
+@media screen and (min-width:800px) {
+
+    .btn,
+    .btn:visited {
+        background-color: #4D4D4D;
+        color: white;
+        padding: 15px 20px;
+        border-radius: 10px;
+        font-weight: bold;
+        min-width: 150px;
+        text-align: center;
+        display: inline-block;
+        margin: 4px;
+    }
+
+}
+
 
 /* -------------------- HEADINGS AND TYPE */
 
@@ -41,7 +128,31 @@ h3,
 h4,
 h5 {
     font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+    font-size: 40px;
     font-weight: 500;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: 400;
 }
 
 /* -------------------- LAYOUTS */
@@ -63,12 +174,14 @@ h5 {
     margin: 1%;
 }
 
+/*Tablette and desktop size only*/
 @media screen and (min-width:600px) {
     .layout-header {
         height: 80px;
     }
 }
 
+/* -- Desktop size only*/
 @media screen and (min-width:800px) {
     .layout-wide {
         margin: auto;
@@ -111,7 +224,10 @@ header {
 
 /* -------------------- MODULES */
 
-.content-item-2col,.content-item-3col,.content-item-4col {
+/* - Grid system*/
+.content-item-2col,
+.content-item-3col,
+.content-item-4col {
     display: grid;
 }
 
@@ -120,21 +236,28 @@ header {
 
 }
 
-.content-item-4col div{
+.content-item-4col div {
     padding: 1%;
 }
 
+/* -- Desktop size only*/
 @media screen and (min-width:800px) {
 
-    .content-item-2col div,.content-item-3col div,.content-item-4col div{
+    /* - Grid system*/
+    .content-item-2col div,
+    .content-item-3col div,
+    .content-item-4col div {
         padding: 1%;
     }
+
     .content-item-2col {
         grid-template-columns: 1fr 1fr;
     }
+
     .content-item-3col {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
     .content-item-4col {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
