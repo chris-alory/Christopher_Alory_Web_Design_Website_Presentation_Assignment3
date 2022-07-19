@@ -79,22 +79,59 @@ details p {
 }
 
 .btn,
-.btn:visited {
-    background-color: #4D4D4D;
-    color: white;
+.btn:visited,
+.email,
+.phone,
+.sms {
     padding: 15px 20px;
     border-radius: 10px;
     font-weight: bold;
     min-width: 150px;
-    text-align: center;
-    display: block;
+    justify-content: center;
+    align-items: center;
+    display: flex;
     margin: 4px;
+    color: white;
 }
 
-.btn:hover {
-    color: white;
-    background-color: #999999;
+.btn-default {
+    background-color: #4D4D4D;
+}
 
+.btn-default:hover {
+    background-color: #999999;
+}
+
+.email {
+    background-color: #1aa7f3;
+}
+
+.phone,
+.sms {
+    background-color: #00f700;
+}
+
+.icon {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.email-icon {
+    background: url(../images/email.svg);
+    background-size: 100%;
+}
+
+
+.phone-icon {
+    background: url(../images/phone.svg);
+    background-size: 100%;
+}
+
+.sms-icon {
+    background: url(../images/sms.svg);
+    background-size: 100%;
 }
 
 .border {
@@ -105,18 +142,29 @@ details p {
 @media screen and (min-width:800px) {
 
     .btn,
+    .email,
+    .phone,
+    .sms,
     .btn:visited {
-        background-color: #4D4D4D;
-        color: white;
-        padding: 15px 20px;
-        border-radius: 10px;
-        font-weight: bold;
-        min-width: 150px;
-        text-align: center;
-        display: inline-block;
-        margin: 4px;
+        justify-content: center;
+        display: inline-flex;
     }
 
+    .btn-default:hover {
+        color: white;
+        background-color: #999999;
+    }
+
+    .email:hover {
+        color: white;
+        background-color: #1596dc;
+    }
+
+    .phone:hover,
+    .sms:hover {
+        color: white;
+        background-color: #05d105;
+    }
 }
 
 
