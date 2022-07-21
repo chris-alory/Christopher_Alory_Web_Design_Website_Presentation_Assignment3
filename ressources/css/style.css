@@ -128,24 +128,21 @@ details p {
 
 .icon {
     display: inline-block;
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     margin-right: 10px;
 }
 
 .email-icon {
-    background: url(../images/email.svg);
-    background-size: 100%;
+    background: url(../images/email.svg)no-repeat center;
 }
 
 .phone-icon {
-    background: url(../images/phone.svg);
-    background-size: 100%;
+    background: url(../images/phone.svg)no-repeat center;
 }
 
 .sms-icon {
-    background: url(../images/sms.svg);
-    background-size: 100%;
+    background: url(../images/sms.svg) no-repeat center;
 }
 
 .border {
