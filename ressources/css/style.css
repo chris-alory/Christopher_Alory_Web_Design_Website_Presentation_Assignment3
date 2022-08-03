@@ -95,11 +95,13 @@ details p {
 }
 
 .btn-default {
-    background-color: #4D4D4D;
+    background-color: #e7e5e5;
+    color:black;
 }
 
 .btn-default:hover {
     background-color: #999999;
+    color:white;
 }
 
 .email {
@@ -236,6 +238,7 @@ h5 {
 
 .layout-grid {
     margin: 0px;
+    border-radius:10px;
 }
 
 .layout-wide {
@@ -319,12 +322,25 @@ nav {
 main nav {
     display: none;
     position: sticky;
+    padding: 20px 0px;
 }
 
 nav ul {
-    margin: 0px;
+    margin: 20px 0px;
+    padding: 0px;
     list-style: none;
 
+}
+
+nav ul a {
+    display:block;
+    color:black;
+    font-weight:bold;
+    padding: 5px 0px;
+}
+
+nav ul a:hover {
+    background:#e7e5e5;
 }
 
 /*Tablette and desktop size only*/
@@ -346,6 +362,7 @@ nav ul {
         text-align: center;
         background-color: white;
         top: 6px;
+        border-radius:10px;
     }
 }
 
