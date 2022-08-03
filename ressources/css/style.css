@@ -168,6 +168,10 @@ select {
 /* -- Desktop size only*/
 @media screen and (min-width:800px) {
 
+    body {
+        padding: 0px 6px;
+    }
+
     .btn,
     .email,
     .phone,
@@ -223,10 +227,15 @@ h5 {
 }
 
 .layout-header {
-    display: block;
+    display: flex;
+    align-items: center;
     height: 50px;
     padding: 0% 2%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.layout-grid {
+    margin: 0px;
 }
 
 .layout-wide {
@@ -247,6 +256,10 @@ h5 {
         margin: auto;
     }
 
+    .layout-grid {
+        margin: 6px 0px;
+    }
+
     header {
         display: none;
     }
@@ -261,34 +274,104 @@ header {
 .logo,
 .menu-mobile img {
     width: 40px;
-    margin: 5px 0px;
+    border-radius: 0px;
 }
 
 .menu-mobile {
     position: absolute;
     right: 2%;
+    background-color: white;
+    border: none;
+    padding: 0px;
 }
 
+/*Tablette and desktop size only*/
 @media screen and (min-width:600px) {
 
     .logo,
     .menu-mobile img {
         width: 60px;
-        margin: 10px 0px;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .logo {
+        width: 60%;
     }
 }
 
 /* -------------------- NAVIGATION */
 
+.mobile-nav {
+    display: none;
+}
+
+.mobile-nav.open {
+    display: block
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.80);
+    position: fixed;
+    width: 100%;
+}
+
+main nav {
+    display: none;
+    position: sticky;
+}
+
+nav ul {
+    margin: 0px;
+    list-style: none;
+
+}
+
+/*Tablette and desktop size only*/
+@media screen and (min-width:600px) {
+
+    nav {
+        top: 80px;
+    }
+}
+
+/* -- Desktop size only*/
+@media screen and (min-width:800px) {
+    nav {
+        display: none;
+    }
+
+    main nav {
+        display: block;
+        text-align: center;
+        background-color: white;
+        top: 6px;
+    }
+}
+
 /* -------------------- FOOTER */
+
+/* -- Desktop size only*/
+@media screen and (min-width:800px) {
+    footer {
+        display: none;
+    }
+}
 
 /* -------------------- MODULES */
 
+
+
 /* - Grid system*/
+.content-item-layout,
 .content-item-2col,
 .content-item-3col,
 .content-item-4col {
     display: grid;
+}
+
+.content-item-layout {
+    grid-template-columns: 0px 1fr;
 }
 
 .content-item-4col {
@@ -297,7 +380,7 @@ header {
 }
 
 .content-item-4col div {
-    padding: 1%;
+    grid-gap: 4px;
 }
 
 /* -- Desktop size only*/
@@ -307,7 +390,12 @@ header {
     .content-item-2col div,
     .content-item-3col div,
     .content-item-4col div {
-        padding: 1%;
+        grid-gap: 4px;
+    }
+
+    .content-item-layout {
+        grid-template-columns: 250px auto;
+        grid-gap: 6px;
     }
 
     .content-item-2col {
