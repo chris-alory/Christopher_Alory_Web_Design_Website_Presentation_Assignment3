@@ -185,13 +185,47 @@ select {
 
 }
 
-.content h1, .content h2
-{
-    text-align:center;
+.content h1,
+.content h2 {
+    text-align: center;
 }
 
-.content p
-{ text-align:justify;}
+.content p {
+    text-align: justify;
+}
+
+.twitter-timeline,
+#eapps-instagram-feed-1 {
+    border: #e1e8ec solid 1px !important;
+    border-radius: 10px;
+}
+
+#eapps-instagram-feed-1 .eapps-instagram-feed-header {
+    background-color: transparent !important;
+}
+
+.eapps-instagram-feed-posts-item-template-tile .eapps-instagram-feed-posts-item-image {
+    border-radius: 0px;
+    margin: 2px;
+}
+
+.eapps-instagram-feed-posts {
+    margin: 5px;
+}
+
+.eapps-link {
+    display: none !important;
+    visibility: hidden !important
+}
+
+.hide-button-ig {
+    width: 90%;
+    background: white;
+    position: relative;
+    height: 40px;
+    margin: -45px auto 0px auto;
+    z-index: 9999999999999;
+}
 
 /* -------------------- HEADINGS AND TYPE */
 
@@ -317,7 +351,7 @@ header {
 }
 
 .mobile-nav.open {
-    display: block
+    display: block;
 }
 
 nav {
@@ -330,7 +364,6 @@ nav {
 main nav {
     display: none;
     position: sticky;
-    padding: 20px 0px;
 }
 
 nav ul {
@@ -347,19 +380,17 @@ nav ul a {
     padding: 5px 0px;
 }
 
-.mobile-nav ul
-{
-    margin:0px;
-}
-.mobile-nav ul a
-{
-    padding: 20px;
-    border-top:1px solid black;
+.mobile-nav ul {
+    margin: 0px;
 }
 
-.mobile-nav ul li:last-of-type
-{
-    border-bottom:1px solid black; 
+.mobile-nav ul a {
+    padding: 20px;
+    border-top: 1px solid black;
+}
+
+.mobile-nav ul li:last-of-type {
+    border-bottom: 1px solid black;
 }
 
 nav ul a:hover {
@@ -371,6 +402,7 @@ nav ul a:hover {
 
     nav {
         top: 80px;
+        box-shadow: none;
     }
 }
 
@@ -399,12 +431,11 @@ nav ul a:hover {
 }
 
 /* -------------------- FOOTER */
-.layout-footer
-{
-    align-items:center;
+.layout-footer {
+    align-items: center;
 }
-.social-btn
-{
+
+.social-btn {
     width: 30%;
 }
 
@@ -425,7 +456,9 @@ nav ul a:hover {
 .content-item-3col,
 .content-item-4col {
     display: grid;
+
 }
+
 
 .content-item-layout {
     grid-template-columns: 0px 1fr;
@@ -437,12 +470,11 @@ nav ul a:hover {
 
 }
 
-.social-btn
-{
+.social-btn {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
     margin: 5px auto;
-    width:50%
+    width: 50%
 }
 
 /* -- Desktop size only*/
@@ -472,9 +504,9 @@ nav ul a:hover {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
-    .social-btn
-{
-    grid-gap:4px;
-    margin: 40px auto 20px auto;
-}
+    .social-btn {
+        grid-gap: 4px;
+        margin: 40px auto 20px auto;
+        display: inline-grid;
+    }
 }
