@@ -185,6 +185,13 @@ select {
 
 }
 
+.content h1, .content h2
+{
+    text-align:center;
+}
+
+.content p
+{ text-align:justify;}
 
 /* -------------------- HEADINGS AND TYPE */
 
@@ -225,7 +232,7 @@ h5 {
 
 .layout {
     background-color: #fff;
-    padding: 1%;
+    padding: 2%;
 }
 
 .layout-header {
