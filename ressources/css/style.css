@@ -209,10 +209,6 @@ select {
     margin: 2px;
 }
 
-.eapps-instagram-feed-posts {
-    margin: 5px;
-}
-
 .eapps-link {
     display: none !important;
     visibility: hidden !important
@@ -456,7 +452,6 @@ nav ul a:hover {
 .content-item-3col,
 .content-item-4col {
     display: grid;
-
 }
 
 
@@ -484,7 +479,7 @@ nav ul a:hover {
     .content-item-2col,
     .content-item-3col,
     .content-item-4col {
-        grid-gap: 4px;
+        grid-gap: 20px;
     }
 
     .content-item-layout {
