@@ -373,6 +373,10 @@ nav ul a {
     padding: 5px 0px;
 }
 
+nav ul a:visited {
+    color: black;
+}
+
 .mobile-nav ul {
     margin: 0px;
 }
