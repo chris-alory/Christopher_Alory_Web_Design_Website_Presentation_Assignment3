@@ -160,6 +160,16 @@ select {
     border: none;
 }
 
+.photo-side
+{
+    text-align:center;
+    font-size:14px;
+}
+
+.photo-side p{
+    margin:0px 0px 20px 0px;
+}
+
 /*Tablette and desktop size only*/
 @media screen and (min-width:600px) {
     select {
@@ -522,4 +532,55 @@ nav ul a:hover,nav ul .active {
         margin: 40px auto 20px auto;
         display: inline-grid;
     }
+}
+
+.zoom-in,.zoom-in2
+{
+    cursor:zoom-in;
+    border:0;
+    background:transparent;
+    padding:0;
+}
+
+.zoom-img,.zoom-img2
+{
+display:none;
+}
+
+.zoom-img.active,.zoom-img2.active
+{
+    display:block;
+    background: #232323a1;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom:0;
+    width:100%;
+}
+
+.zoom-img.active img,.zoom-img2.active img
+{
+    margin: 2.5% auto;
+    max-height: 90%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border:1px solid white;
+    border-radius:0;
+}
+
+.zoom-close,.zoom-close2
+{
+    position:absolute;
+    top:20px;
+    right:20px;
+    background-color:black;
+    border:1px solid white;
+    color:white;
+    font-weight: bolder;
+    font-size:20px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    cursor:pointer;
 }
