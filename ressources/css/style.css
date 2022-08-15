@@ -103,7 +103,7 @@ margin:auto;
 
 .btn-default {
     background-color: #e7e5e5;
-    color: black;
+    color: black !important;
 }
 
 .btn-default:hover {
