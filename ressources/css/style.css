@@ -106,7 +106,7 @@ margin:auto;
     color: black !important;
 }
 
-.btn-default:hover {
+.btn-default:hover,.form-btn:hover {
     background-color: #999999;
     color: white;
 }
@@ -177,31 +177,6 @@ select {
     margin:0px 0px 20px 0px;
 }
 
-/*Tablette and desktop size only*/
-@media screen and (min-width:600px) {
-    select {
-        display: none;
-    }
-}
-
-/* -- Desktop size only*/
-@media screen and (min-width:800px) {
-
-    body {
-        padding: 0px 6px;
-    }
-
-    .btn,
-    .email,
-    .phone,
-    .sms,
-    .btn:visited {
-        justify-content: center;
-        display: inline-flex;
-    }
-
-}
-
 .content h1,
 .content h2 {
     text-align: center;
@@ -263,6 +238,74 @@ justify-content:right;
     width:20px;
     height:20px;
 }
+
+
+.form-input {
+display:flex;
+    overflow: visible;
+    height: 35px;
+    width: 100%;
+    margin: auto;
+    border: solid 1px #e8e5e5;
+    border-radius: 5px;
+    background: #e8e5e5;
+    color: black;
+}
+
+textarea{
+    min-height:100px;
+}
+
+.form-btn
+{
+    color:black;
+    font-weight: bolder;
+    padding: 15px 20px;
+    border-radius: 10px;
+    background: #e8e5e5;
+    justify-content: center;
+    display: inline-flex;
+    border:none;
+}
+
+.form-imputs-btn
+{
+    margin: auto;
+    display: block;
+    width: 100%;
+}
+
+
+/*Tablette and desktop size only*/
+@media screen and (min-width:600px) {
+    select {
+        display: none;
+    }
+}
+
+/* -- Desktop size only*/
+@media screen and (min-width:800px) {
+
+    body {
+        padding: 0px 6px;
+    }
+
+    .btn,
+    .email,
+    .phone,
+    .sms,
+    .btn:visited {
+        justify-content: center;
+        display: inline-flex;
+    }
+
+    .form-input, .form-imputs-btn
+    {
+        width:50%;
+    }
+
+}
+
 /* -------------------- HEADINGS AND TYPE */
 
 h1,
