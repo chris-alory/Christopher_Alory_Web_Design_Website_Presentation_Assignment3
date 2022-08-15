@@ -78,6 +78,13 @@ details p {
     margin: 0px 10px;
 }
 
+.img-responsive
+{
+    display:block;
+max-width:100%;
+margin:auto;
+}
+
 .btn,
 .btn:visited,
 .email,
