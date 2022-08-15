@@ -244,6 +244,18 @@ select {
     border-radius:10px;
     opacity:0.8;
 }
+
+.icon-txt{
+display:flex;
+align-items: center;
+justify-content:right;
+}
+
+.icon-txt img{
+    margin:0px 5px;
+    width:20px;
+    height:20px;
+}
 /* -------------------- HEADINGS AND TYPE */
 
 h1,
