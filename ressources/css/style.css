@@ -519,7 +519,7 @@ nav ul a:hover,nav ul .active {
     width: 50%
 }
 
-.zoom-in,.zoom-in2
+.zoom-in,.zoom-in2, .zoom-in3, .zoom-in4, .zoom-in5, .zoom-in6, .zoom-in7, .zoom-in8
 {
     cursor:zoom-in;
     border:0;
@@ -527,12 +527,12 @@ nav ul a:hover,nav ul .active {
     padding:0;
 }
 
-.zoom-img,.zoom-img2
+.zoom-img,.zoom-img2, .zoom-img3, .zoom-img4, .zoom-img5, .zoom-img6, .zoom-img7, .zoom-img8
 {
 display:none;
 }
 
-.zoom-img.active,.zoom-img2.active
+.zoom-img.active,.zoom-img2.active, .zoom-img3.active, .zoom-img4.active, .zoom-img5.active, .zoom-img6.active, .zoom-img7.active, .zoom-img8.active
 {
     display:flex;
     align-items:center;
@@ -546,7 +546,7 @@ display:none;
     z-index:2;
 }
 
-.zoom-img.active img,.zoom-img2.active img
+.zoom-img.active img,.zoom-img2.active img, .zoom-img3.active img, .zoom-img4.active img, .zoom-img5.active img, .zoom-img6.active img, .zoom-img7.active img, .zoom-img8.active img
 {
     max-height: 90%;
     position: relative;
@@ -557,7 +557,7 @@ display:none;
     margin:auto;
 }
 
-.zoom-close,.zoom-close2
+.zoom-close,.zoom-close2, .zoom-close3, .zoom-close4, .zoom-close5, .zoom-close6, .zoom-close7, .zoom-close8
 {
     position:absolute;
     top:20px;
