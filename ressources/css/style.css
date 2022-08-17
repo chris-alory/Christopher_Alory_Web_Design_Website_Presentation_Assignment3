@@ -109,6 +109,7 @@ details p {
 .form-btn:hover {
     background-color: #999999;
     color: white;
+    cursor: pointer;
 }
 
 .email {
